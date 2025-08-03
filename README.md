@@ -22,8 +22,8 @@
 
 ## 🖥️ UI Preview
 
-> Add screenshots here of the app running, especially showing the serial output and settings panel.
-
+<!-- > Add screenshots here of the app running, especially showing the serial output and settings panel. -->
+![UI2](./Resources/ss2.png)
 ---
 
 ## 🔧 Tech Stack
@@ -92,6 +92,10 @@ MIT License. You are free to modify and use it.
 - 💼 Embedded Software Engineer | System Designer
 - 🌐 [Portfolio Website](https://luke-anubis.vercel.app)
 - 📫 [GitHub](https://github.com/anubhav666)
+
+![.NET](https://img.shields.io/badge/.NET-8.0-blueviolet)
+![Platform](https://img.shields.io/badge/Pico-RP2040-orange)
+![License](https://img.shields.io/github/license/anubhav666/PicoFreeRTOS-Dashboard)
 
 ---
 
