@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Resources\app.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\1.ico" />
+    <None Remove="Resources\2.ico" />
+    <None Remove="Resources\3.ico" />
+    <None Remove="Resources\appicon.ico" />
+    <None Remove="Resources\serial.png" />
+    <None Remove="Resources\vga.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\1.ico" />
+    <Content Include="Resources\2.ico" />
+    <Content Include="Resources\3.ico" />
+    <Content Include="Resources\app.ico" />
+    <Content Include="Resources\serial.png" />
+    <Content Include="Resources\vga.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Ports" Version="9.0.7" />
+  </ItemGroup>
+
+</Project>

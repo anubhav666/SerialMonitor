@@ -3,7 +3,7 @@ using System.IO.Ports;
 using System.Text;
 using System.Windows.Forms;
 
-namespace SerialMonitor
+namespace SerialSense
 {
     public partial class Form1 : Form
     {
@@ -47,11 +47,23 @@ namespace SerialMonitor
 
         private void RefreshPortList()
         {
+            // Clear and refresh COM ports
             comboBoxPort.Items.Clear();
             string[] ports = SerialPort.GetPortNames();
             comboBoxPort.Items.AddRange(ports);
-            if (ports.Length > 0)
-                comboBoxPort.SelectedIndex = 0;
+
+            // Reset selections
+            comboBoxPort.SelectedIndex = -1;
+            comboBoxPort.Text = "";
+
+            comboBoxBaud.SelectedIndex = -1;
+            comboBoxBaud.Text = "";
+
+            // Optional: show a message if no ports found
+            if (ports.Length == 0)
+            {
+                MessageBox.Show("No COM ports found.", "Refresh", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void buttonConnect_Click(object sender, EventArgs e)
