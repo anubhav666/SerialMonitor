@@ -23,7 +23,11 @@
 ## 🖥️ UI Preview
 
 <!-- > Add screenshots here of the app running, especially showing the serial output and settings panel. -->
-![UI2](./Resources/ss2.png)
+<p align="center">
+  <img src="./Resources/ss1.png" alt="Architecture" width="400" style="margin-right: 20px;border-radius: 12px;" />
+  <img src="./Resources/ss2.png" alt="Architecture" width="400" style="border-radius: 12px;" />
+</p>
+
 ---
 
 ## 🔧 Tech Stack
